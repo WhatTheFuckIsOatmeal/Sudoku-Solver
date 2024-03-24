@@ -31,14 +31,6 @@ def find_empty(bo):
     return None
 
 # find 3x3 subgrid segment and col/row for valid placement of num
-def find_empty(bo):
-    for i in range(len(bo)):
-        for j in range(len(bo[0])):
-            if bo[i][j] == 0:
-                return i, j
-    return None
-
-# find 3x3 subgrid segment and col/row for valid placement of num
 def valid(bo, num, pos):
     # Check Row
     for i in range(len(bo[0])):
